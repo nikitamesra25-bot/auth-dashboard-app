@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog | Auth Dashboard</title>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+    <div class="auth-container">
+        <div class="auth-card">
+
+            <h1>Create New Blog</h1>
+            <p class="subtitle">Share your thoughts with the world</p>
+
+            <form id="createBlogForm">
+
+                <div class="form-group">
+                    <label for="title">Blog Title</label>
+                    <input
+                        type="text"
+                        id="title"
+                        placeholder="Enter blog title"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="content">Blog Content</label>
+                    <textarea
+                        id="content"
+                        placeholder="Write your blog content..."
+                        rows="6"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" id="createBlogBtn">
+                    Publish Blog
+                </button>
+
+                <p id="message"></p>
+
+            </form>
+
+            <p class="auth-link">
+                <a href="dashboard.html">Back to Dashboard</a>
+            </p>
+
+        </div>
+    </div>
+
+    <script src="js/create-blog.js"></script>
+
+</body>
+</html>

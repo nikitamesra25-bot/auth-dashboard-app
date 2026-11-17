@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Auth Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+    <header class="dashboard-header">
+        <div class="logo">Auth Dashboard</div>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+            <button id="logoutBtn">Logout</button>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+
+        <section class="welcome-section">
+            <h1 id="welcomeMessage">Welcome!</h1>
+            <p>Manage your account and blogs from here.</p>
+        </section>
+
+        <section class="profile-card">
+            <h2>My Profile</h2>
+
+            <div class="profile-info">
+                <p><strong>Name:</strong> <span id="userName">Loading...</span></p>
+                <p><strong>Email:</strong> <span id="userEmail">Loading...</span></p>
+            </div>
+        </section>
+
+        <section class="blogs-section">
+            <div class="section-heading">
+                <h2>My Blogs</h2>
+                <button id="createBlogBtn">+ Create Blog</button>
+            </div>
+
+            <div id="blogsContainer">
+                <p>Your blogs will appear here.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>
